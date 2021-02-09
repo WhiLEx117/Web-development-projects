@@ -1,0 +1,81 @@
+:root{
+    --bl:black;
+    --b:rgb(0, 140, 255);
+    --g:green;
+    --gr:rgb(214, 214, 214);
+    --w:white;
+    --v:violet;
+    --p:purple;
+    --r:rgb(214, 37, 37);
+    --rd:rgb(153, 21, 21);
+    --o:orange;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+.main{
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.flex{
+    flex-wrap: wrap;
+}
+.Plan-one,.Plan-two,.Plan-three,.Plan-Four{
+    width: 22%;
+    box-sizing: border-box;
+    height: 400px;
+    border-radius: 10px;
+    border: 1px solid var(--bl);
+    background: var(--gr);
+    margin: 0 auto;
+    padding: 15px;
+    box-shadow: 3px 3px  3px var(--bl);
+}
+.pay{
+    border-radius: 10px;
+    font-size: 29px;
+    text-align: center;
+    color: var(--w);
+    text-decoration: none;
+    display: block;
+    background: var(--b);
+}
+.pay:hover{
+
+    border:2px solid var(--b);
+    color:var(--bl);
+    background: var(--w);
+}
+.money{
+    font-size: 40px;
+    padding: 0%;
+    margin: 0%;
+    color: var(--b);
+}
+@media(max-width:1020px){
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+    .Plan-one,.Plan-two,.Plan-three,.Plan-Four{
+        width: 42%;
+        margin: 20px;
+    }
+}
+@media(max-width:560px){
+    .Plan-one,.Plan-two,.Plan-three,.Plan-Four{
+        width: 100%;
+        margin: 20px;
+    }
+}
+@media(min-width:100px) and(max-width:300px){
+    .Plan-one,.Plan-two,.Plan-three,.Plan-Four{
+        height: auto;
+        width: auto;
+        margin: 20px;
+    }
+}
