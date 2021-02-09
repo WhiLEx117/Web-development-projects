@@ -1,0 +1,169 @@
+:root {
+    --boxes: rgb(247, 247, 247);
+    --bg:rgb(207, 207, 207);
+    --char:dodgerblue;
+    --f: dodgerblue;
+    --st:rgb(126, 126, 126);
+    --t:black;
+    --b:rgb(0, 185, 56);
+  }
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    background: var(--bg); 
+}
+.main-menu{
+    display: flex;
+}
+/*Profile*/
+.profile{
+    border-radius: 25px;
+    justify-content: center;
+    width: calc(100% - 50%);
+    margin:20px;
+    padding: 40px;
+    background: var(--boxes);
+}
+.name-profile-img{
+    text-align: center;
+}
+.img-profile{
+    border: 7px solid dodgerblue;
+    border-radius: 50%;
+    width: 250px;
+}
+.name{
+    color:var(--char);
+}
+/*Barras*/
+.barra{
+    width: 240px;
+    border-radius: 40px;
+    margin: 10px;
+    background: var(--b);
+    display: flex;
+    justify-content: center;
+}
+.barra2{
+    width: 200px;
+    border-radius: 40px;
+    margin: 10px;
+    background: var(--b);
+    display: flex;
+    justify-content: center;
+}
+.barra3{
+    width: 160px;
+    border-radius: 40px;
+    margin: 10px;
+    background: var(--b);
+    display: flex;
+    justify-content: center;
+}
+.barra4{
+    width: 110px;
+    border-radius: 40px;
+    margin: 10px;
+    background: var(--b);
+    display: flex;
+    justify-content: center;
+}
+.barra5{
+    width: 160px;
+    border-radius: 40px;
+    margin: 10px;
+    background: var(--b);
+    display: flex;
+    justify-content: center;
+}
+
+/*Work-Experience*/
+.Work-experience{
+    border-radius: 25px;
+    padding: 40px;
+    margin:20px;
+    margin-bottom: 40px;
+    background: var(--boxes);
+}
+.Education{
+    border-radius: 25px;
+    padding: 40px;
+    margin:20px;
+    background: var(--boxes);
+}
+.sub-title{
+    font-size: 17px;
+    color:var(--st);
+}
+.fecha{
+
+    color: var(--char);
+}
+.title-work-experience{
+    font-size: x-large;
+    color:var(--t);
+}
+.title-education{
+    font-size: x-large;
+    color:var(--t);
+}
+
+/*footer*/
+.foot{
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    padding: 1%;
+    background: var(--f);
+}
+
+/*Media Queries*/
+
+@media screen and (max-width:800px){
+    .main-menu{
+        display: block;
+        flex-direction: column;
+    }
+    .profile{
+        width: auto;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .Work-experience{
+        width: auto;
+
+    }
+    .Education{
+        width: auto;
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+    .foot{
+        width: auto;
+    }
+}
+@media(max-width:400px){
+    .profile{
+        width: auto;
+    }
+    .name-profile-img img{
+        width: 200px;
+    }
+    .barra{
+        width: 90%;
+    }
+    .barra2{
+        width: 80%;
+    }
+    .barra3{
+        width: 75%;
+    }
+    .barra4{
+        width: 50%;
+    }
+    .barra5{
+        width: 75%;
+    }
+}
