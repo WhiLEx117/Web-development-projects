@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <button class="nav-b" onclick="accion()">Menú</button>
+         <a href="#" class="nav-e des">Inicio</a>
+         <a href="#" class="nav-e des">Videos</a>
+         <a href="#" class="nav-e des">Fotos</a>
+         <a href="#" class="nav-e des">Comunidad</a>
+    </nav>
+
+    <script>
+        function accion(){
+            console.log('Funciona Mi boton');
+            var an = document.getElementsByClassName('nav-e')
+            for(var i = 0; i < an.length; i++){
+                an[i].classList.toggle('des')
+            }
+        }
+    </script>
+</body>
+</html>
