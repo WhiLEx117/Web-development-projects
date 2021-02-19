@@ -1,0 +1,85 @@
+$bgcolor-1:rgb(36, 128, 219);
+$bgcolor-2:white;
+$txt-color-1:white;
+@mixin bar-container-bg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:$txt-color-1;
+    background: {
+        color: $bgcolor-1;
+    }
+    height: 80px;
+}
+@mixin bar-nav-left-buttoms ($bgcolor-2, $txt-color-1) {
+    background: {
+        color: $bgcolor-2;
+    }
+    border: {
+        radius: 10px;
+    }
+    padding: 10px;
+    color:$txt-color-1;
+    margin: {
+        left: 4px;
+        right: 4px;
+    }
+}
+@mixin hover($bgcolor-2, $txt-color-1) {
+    background: {
+        color: $bgcolor-2;
+    }
+    border: {
+        radius: 10px;
+    }
+    padding: 10px;
+    color:$txt-color-1;
+
+   &:hover {
+    background: {
+        color: grey;
+    }
+    border: {
+        radius: 10px;
+    }
+    padding: 10px;
+    color:white;
+   }
+}
+
+.bar-container{
+    @include bar-container-bg();
+    .bar-nav-left{
+        display: flex;
+        align-items: center;
+        margin: {
+            left: 20px;
+        }
+        height: 100%;
+        .bar-nav-left-title{
+            margin: {
+                left: 20px;
+                right: 20px;
+            }
+        }
+        .bar-nav-left-buttoms a{
+            @include bar-nav-left-buttoms(white, black);
+            @include hover( white, black);
+        }
+    }
+    .bar-nav-right a:nth-last-of-type(1){
+        @include hover( red, white);
+        margin: {
+            right: 40px;
+        }
+        
+    }
+    .bar-nav-right a:nth-last-of-type(2){
+        @include bar-nav-left-buttoms(white, black);
+        @include hover( white, black);
+
+    }
+}
+
+
+

@@ -1,0 +1,85 @@
+$margin:0px;
+$txtcolor:black;
+$bgcolor-1:rgb(36, 128, 219);
+
+@mixin container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: {
+        top: 40px;
+    }
+}
+@mixin menu {
+    display: flex;
+}
+@mixin hover() {
+    background: {
+        color: $bgcolor-1;
+    }
+    border: {
+        radius: 10px;
+    }
+    padding: 10px;
+    color:white;
+
+   &:hover {
+    background: {
+        color: grey;
+    }
+    border: {
+        radius: 10px;
+    }
+    padding: 10px;
+    color:white;
+   }
+}
+@mixin buttom {
+    background: {
+        color: $bgcolor-1;
+    }
+    border: {
+        radius: 10px;
+    }
+    display: flex;
+    align-items: center;
+    margin: {
+        left: 10px;
+        right: 10px;
+    }
+}
+
+
+.Games-container{
+    @include container();
+}
+
+.Games-menu{
+    @include menu();
+
+    div:nth-of-type(1) {
+        @include hover();
+        a {
+            color: white;
+        }
+        margin: {
+            left: 10px;
+            right: 10px;
+        }
+    }
+    div:nth-of-type(2) {
+        @include buttom();
+        a {
+            @include hover();
+        }
+
+    }
+    div:nth-of-type(3) {
+        @include buttom();
+        a {
+            @include hover();
+        }
+
+    }
+}

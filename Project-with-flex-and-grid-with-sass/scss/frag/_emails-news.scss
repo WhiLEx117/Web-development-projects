@@ -1,0 +1,85 @@
+$bgcolor-1:rgb(15, 119, 223);
+$bgcolor-2:white;
+$txt-color-1:white;
+
+
+
+@mixin bar-nav-left-buttoms ($bgcolor-2, $txt-color-1) {
+    background: {
+        color: $bgcolor-2;
+    }
+    border: {
+        radius: 10px;
+    }
+    padding: 10px;
+    color:$txt-color-1;
+    margin: {
+        left: 4px;
+        right: 4px;
+    }
+    height: 30px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+}
+@mixin hover($bgcolor-2, $txt-color-1) {
+    background: {
+        color: $bgcolor-2;
+    }
+    border: {
+        radius: 10px;
+    }
+    padding: 10px;
+    color:$txt-color-1;
+
+   &:hover {
+    background: {
+        color: grey;
+    }
+    border: {
+        radius: 10px;
+    }
+    padding: 10px;
+    color:$txt-color-1;
+   }
+   display: flex;
+   align-items: center;
+}
+
+@mixin news {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    background: {
+        color:$bgcolor-1;
+    }
+    color: $txt-color-1;
+
+}
+.news-container{
+    @include news();
+
+
+    .news-email-buttoms{
+        display: flex;
+        margin: {
+            left:  40px;
+            right: 80px;
+        }
+    }
+    .news-email-buttoms p {
+        @include bar-nav-left-buttoms (white, grey)
+    
+    }
+    .news-email-buttoms a {
+        @include hover(red, white)
+    }
+    .news-text,.updates{
+        margin: {
+            left: 55px;
+            top: 10px;
+        }
+    }
+
+}
