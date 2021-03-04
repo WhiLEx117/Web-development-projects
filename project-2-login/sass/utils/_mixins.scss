@@ -1,0 +1,35 @@
+@mixin buttom-txt {
+    width: 250px;
+    height: 45px;
+    color: black;
+    border-radius: 10px;
+    border: none;
+
+}
+@mixin buttom-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 45px;
+    background: {
+        color: rgb(204, 48, 48);
+    }
+    border: {
+        radius: 10px;
+    }
+
+    color:white;
+
+   &:hover {
+    background: {
+        color: rgb(122, 122, 122);
+    }
+    border: {
+        radius: 10px;
+    }
+
+    color:white;
+}
+border: none;
+}

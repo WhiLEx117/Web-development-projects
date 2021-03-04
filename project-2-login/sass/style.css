@@ -1,0 +1,126 @@
+.logo-container {
+  color: red;
+}
+.logo-container .title-red {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  font-size: xx-large;
+  margin: 15px;
+}
+
+body {
+  background-image: url("/background-1.jpg");
+  background-size: 100% 100%;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.main-container .login-container {
+  background-color: rgba(1, 1, 1, 0.9);
+  height: 400px;
+  width: 300px;
+  border-radius: 8px;
+  color: white;
+  padding: 50px;
+}
+.main-container .login-container .user-login {
+  font-size: 25px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.main-container .login-container .buttoms-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .login-container .buttoms-login .buttom-txt {
+  width: 250px;
+  height: 45px;
+  color: black;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main-container .login-container .buttoms-login .buttom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 45px;
+  background-color: #cc3030;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main-container .login-container .buttoms-login .buttom:hover {
+  background-color: #7a7a7a;
+  border-radius: 10px;
+  color: white;
+}
+.main-container .login-container .help-container {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container .login-container .help-container p {
+  margin-right: 5px;
+}
+.main-container .login-container .info-container {
+  font-size: 14px;
+}
+.main-container .login-container .info-container p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.foot {
+  color: white;
+  background-color: rgba(1, 1, 1, 0.8);
+  width: 100%;
+  height: auto;
+}
+.foot .foot-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 120px;
+}
+.foot .foot-container .contact-container {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.foot .foot-container .sections-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.foot .foot-container .sections-container li {
+  flex: 1 300px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+* a {
+  color: grey;
+  text-decoration: none;
+}
+* li {
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */

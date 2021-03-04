@@ -1,0 +1,65 @@
+body {
+    background-image: url("/background-1.jpg");
+    background-size: 100% 100%;
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .login-container {
+        background: {
+            color: rgba(1, 1, 1, 0.9);
+        }
+        height: 400px;
+        width: 300px;
+        border-radius: 8px;
+        color: white;
+        padding: 50px;
+        .user-login {
+            font-size: 25px;
+            margin: {
+                left: 20px;
+                bottom: 20px;
+            }
+        }
+        .buttoms-login{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .buttom-txt{
+                @include buttom-txt();
+                margin: {
+                    top: 10px;
+                    bottom: 10px;
+                }
+            }
+            .buttom {
+                @include buttom-login();
+                margin: {
+                    top: 10px;
+                    bottom: 10px;
+                }
+            }
+        }
+        .help-container {
+            display: flex;
+            justify-content: space-between;
+            p {
+                margin: {
+                    right: 5px;
+                }
+            }
+        }
+        .info-container {
+            font-size: 14px;
+            p {
+                margin: {
+                    top: 10px;
+                    bottom: 10px;
+                }
+            }
+        }
+    }
+}
