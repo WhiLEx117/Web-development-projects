@@ -1,0 +1,23 @@
+@import "../layout/vars";
+@import "../utils/mixins";
+@import "../layout/nav";
+@import "../layout/img";
+@import "../layout/info";
+@import "../layout/section";
+@import "../layout/articulos";
+@import "../layout/foot";
+@import "../layout/window-emergency";
+ 
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    a {
+        text: {
+            decoration:none;
+        }
+    }
+    li {
+        list-style: none;
+    }
+}

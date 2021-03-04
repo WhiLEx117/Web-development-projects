@@ -1,0 +1,15 @@
+.foot{
+    background: {
+        color: rgb(49, 48, 48);
+    }
+    color: white;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    div {
+        margin: {
+            bottom: 50px;
+            left: 50px;
+        }
+    }
+}

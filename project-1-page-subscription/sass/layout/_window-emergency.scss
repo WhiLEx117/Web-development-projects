@@ -1,0 +1,128 @@
+.overlay{
+    background: {
+        color: rgba(0,0,0,.5);
+    }
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+   
+    .popup {
+        background: {
+            color: white;
+        }
+        box: {
+            shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
+        }
+        border: {
+            radius:5px;
+        }
+        padding: 20px;
+        text-align: center;
+        width: 600px;
+        height: auto;
+        opacity: 0;
+        transition: .3s ease all;
+        transform: scale(0.7);
+        .btn-cerrar-popup{
+            font-size: 16px;
+            line-height: 16px;
+            display: flex;
+            justify-content: flex-end;
+            color: gray;
+            transition:  .3s ease all;
+        }
+        .btn-cerrar-popup:hover{
+            color: black;
+        }
+        h3 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            opacity: 0;
+        }
+        h4 {
+            font-size: 26px;
+            margin-bottom: 40px;
+            opacity: 0;
+        }
+    }
+    .popup form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .popup form .contenedor-inputs input{
+        width: 100%;
+        margin-bottom: 20px;
+        height: 52px;
+        font-size: 18px;
+        text-align: center;
+        border: 3px solid gray;
+        opacity: 0;
+        
+    }
+    .popup form .btn-submit {
+        @include buttom(white, rgba(35, 35, 226 ,0.8), white, rgba(128,128,128,.8));
+        font-size: 16px;
+        cursor: pointer;
+        transition: .3s ease all;
+    }
+    .popup.active {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+.overlay.active{
+    visibility: visible;
+    h3 {
+        animation: et .8s ease .5s forwards;
+    }
+    h4 {
+        animation: ets .8s ease .5s forwards;
+    }
+
+    
+        .popup form .contenedor-inputs input{
+            animation: inpts .7s ease .7s forwards;
+        
+         }   
+        
+         @keyframes inpts {
+            from {
+                transform: translateY(25px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        } 
+    @keyframes et {
+        from {
+            transform: translateY(0px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(22px);
+            opacity: 1;
+        }
+    }
+    @keyframes ets {
+        from {
+            transform: translateY(25px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+

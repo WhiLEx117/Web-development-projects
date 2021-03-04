@@ -1,0 +1,75 @@
+
+.info-container{
+    margin: {
+        left: 100px;
+        right: 100px;
+        top: 50px;
+        bottom: 50px;
+    }
+    .info-pest{
+        @include flex (flex,none,none,wrap,none);
+        margin: {
+            top: 20px;
+            bottom:20px;
+        }
+        a{
+            margin: {
+                left: 10px;
+                height: 10px;
+            }
+            color: $color-3 ;
+        }
+    }
+    .info-search {
+        display: flex;
+        margin: {
+            top:20px;
+            bottom: 20px;
+        }
+        button {
+            @include buttom(white, rgba(35, 35, 226 ,0.8), white, gray);
+            margin: {
+                left: 10px;
+                height: 10px;
+            }
+            border: none;
+        }
+        input {
+            @include buttom(grey, none,none, none);
+            border: none;
+            width: auto;
+            font-size: 18px;
+        }
+    }
+    .info-list{
+         a{
+             display: block;
+             color:$color-3 ;
+             margin: {
+                 top: 50px;
+                 bottom: 50px;
+             }
+        }
+    }
+    .info-numbers{
+        @include flex(flex, none, center,none, column);
+        div {
+            display: flex;
+            p {
+                margin: {
+                    left: 10px;
+                    right: 10px;
+                }
+            }
+            a {
+                color: $color-3;
+                margin: {
+                    left: 10px;
+                    right: 10px;
+                }   
+
+            }
+        }
+
+    }
+}

@@ -1,0 +1,21 @@
+
+.nav-container{
+    @include flex(flex, space-around, center, wrap, none);
+    height: 90px;
+    border-bottom: 20px solid $bgcolor-2 ;
+    width: auto;
+    .nav-buttoms,.nav-title {
+        @include flex(flex, center, center, wrap,none);
+    }
+    .nav-buttoms a{
+        @include buttom(black,white, white, rgba(35, 35, 226 ,0.8));
+
+    }
+    .nav-buttoms button{
+        @include buttom(white,rgba(35, 35, 226 ,0.8), white, rgba(128,128,128,.8));
+        cursor: pointer;
+        transition: .3s ease all;
+        border: none;
+
+    }
+}
