@@ -1,0 +1,10 @@
+.header-container{
+    @include flex();
+    div {
+        margin: {
+            left: 50px;
+            right: 50px;
+        }
+    }
+
+}

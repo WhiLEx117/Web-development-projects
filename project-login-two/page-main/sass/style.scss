@@ -1,0 +1,22 @@
+@import "../sass/base/reset";
+@import "../sass/base/typography";
+@import "../sass/utils/variables";
+@import "../sass/utils/mixins";
+@import "../sass/pages/navegation";
+@import "../sass/pages/main";
+@import "../sass/pages/foot";
+
+* {
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}

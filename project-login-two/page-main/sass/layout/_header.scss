@@ -1,0 +1,29 @@
+header {
+  //   width: 100vh;
+  .nav-container {
+    height: 50px;
+    background: {
+      color: dodgerblue;
+    }
+    @include flex(center, center);
+    position: sticky;
+    top: 0;
+    ol {
+      li {
+        margin: {
+          left: 60px;
+          right: 60px;
+        }
+        a {
+          color: white;
+        }
+      }
+      @include flex(space-between, none);
+    }
+  }
+  .image-container {
+    img {
+      width: 100%;
+    }
+  }
+}
