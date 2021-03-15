@@ -1,0 +1,12 @@
+{
+  "name": "swiper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "servor . index.html 8080 --reload --browse"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
