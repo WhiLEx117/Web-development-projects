@@ -1,0 +1,16 @@
+{
+  "name": "mode-dark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "y": "^0.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "servor . index.html 8080 --reload --browse",
+    "sass": "sass --watch sass/style.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
