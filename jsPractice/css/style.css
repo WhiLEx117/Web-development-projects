@@ -1,0 +1,39 @@
+.list {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: dodgerblue;
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  animation: list__link-animation 0.3s ease 0.4s forwards;
+}
+.list .list__link {
+  border-radius: 10px 0 0 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease all;
+  opacity: 1;
+}
+.list .list__link:hover {
+  border-radius: 10px 0 0 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #493e3e;
+  color: white;
+}
+@keyframes list__link-animation {
+  from {
+    transform: translateX(155px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
