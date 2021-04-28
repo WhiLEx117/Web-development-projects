@@ -1,2 +1,2 @@
-# Projects-Website
-Here you will see everything related to my web projects
+# Mini Projects 2
+These are my mini test projects
