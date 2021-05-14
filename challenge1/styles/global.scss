@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@mixin cards($bg) {
+    padding: 30px;
+    width: 210px;
+    background-color: $bg;
+    // background-color: #064550;
+}
+
+@mixin flex ($alig,$justi) {
+    display: flex;
+    align-items: $alig;
+    justify-content: $justi;
+}
+main{
+    @include flex(center,center);
+    height: 100vh;
+}
+.card{
+    height: 350px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    @include flex(center,center);
+    flex-wrap: wrap;
+    &__one{
+        border-radius: 20px 0 0 20px;
+        @include flex(flex-start,space-between);
+        flex-direction: column;
+        @include cards(#db8a20);
+    }
+    &__two{
+        @include flex(flex-start,space-between);
+        flex-direction: column;
+        border-radius: 0;
+        @include cards(#0b879c);
+    }
+    &__three{
+        border-radius: 0 20px 20px 0;
+        @include flex(flex-start,space-between);
+        flex-direction: column;
+        @include cards(#064550);
+    }
+    &__btn{
+        text-decoration: none;
+        background-color: white;
+        padding: 10px;
+        border-radius: 20px;
+        color: rgba(0, 0, 0, 1);
+    }
+}
+
+@media (max-width:570px){
+    main{
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 50px;
+    }
+    .card{
+        height: auto;
+        &__one{
+            border-radius: 20px 20px 0 0;
+
+
+        }
+        &__three{
+            border-radius: 0 0 20px 20px;
+
+        }
+    }
+}
